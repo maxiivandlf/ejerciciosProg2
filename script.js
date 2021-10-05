@@ -66,7 +66,7 @@ function contarCaracter(cadena, carct) {
   let cont = 0;
 
   for (let i = 0; i < cadena.length; i++) {
-    if (cadena.charAt[i] == carct) {
+    if (cadena[i] == carct) {
       cont += 1;
     }
   }
