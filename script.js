@@ -66,14 +66,13 @@ function contarCaracter(cadena, carct) {
   let cont = 0;
 
   for (let i = 0; i < cadena.length; i++) {
-    if (cadena[i] == carct) {
+    if (cadena.charAt(i) == carct) {
       cont += 1;
     }
   }
   if (cont === 0) {
-    caracterEnc.innerHTML = 'No se encontro "' + carct + '" en la cadena';
+    caracterEnc.innerHTML = `No se encontro "${carct}" en la cadena`;
   } else {
-    caracterEnc.innerHTML =
-      '" ' + carct + '"' + ' Se repite: ' + cont + ' veces';
+    caracterEnc.innerHTML = `"${carct}" Se repite: ${cont} veces`;
   }
 }
