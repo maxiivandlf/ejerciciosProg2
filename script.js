@@ -70,7 +70,7 @@ function contarCaracter(cadena, carct) {
       cont += 1;
     }
   }
-  if (cont === 1) {
+  if (cont === 0) {
     caracterEnc.innerHTML = 'No se encontro "' + carct + '" en la cadena';
   } else {
     caracterEnc.innerHTML =
